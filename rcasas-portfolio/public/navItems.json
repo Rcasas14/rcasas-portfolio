@@ -7,10 +7,10 @@
       "text":"Home", "url":"#home"},
 
     "project": {
-      "text":"Project", "url":"#home"},
+      "text":"Project", "url":"#project"},
 
     "github": {
-      "text":"Github", "url":"#home"},
+      "text":"Github", "url":"#github"},
 
     "theme": {
       "text":"", "url":"../assets/dark-mode-icon.svg"}

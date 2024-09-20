@@ -1,5 +1,5 @@
 <template>
-  <navbar></navbar>
+  <navbar :nav-items="navItems" :active-nav-item="activeNavItem" ></navbar>
 
 </template>
 
@@ -20,18 +20,26 @@
     }
   },
   methods: {
-    async initNavItems(){
+    initNavItems(){
       try {
-        let res = await fetch('./navItems.json');
-        let data = await res.json();
+        // let res = await fetch('./navItems.json');
+        // let data = await res.json();
+        const navItems = [
+          { key: "home", text: "Home", url: "#home" },
+          { key: "project", text: "Project", url: "#project" },
+        ];
 
-        this.navItems = data;
-        console.log(this.navItems)
-        console.log(data)
+        const mainNav = navItems.map((item)=>{
+          return item
+        });
+        
+        this.navItems = mainNav;
+        console.log(mainNav)
       }catch(err){
         console.log('Something Error', err)
       }
     },
+  
   },
   mounted(){
     this.initNavItems();
