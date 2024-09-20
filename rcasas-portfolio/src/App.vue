@@ -1,5 +1,5 @@
 <template>
-  <navbar :nav-items="navItems" :active-nav-item="activeNavItem" ></navbar>
+  <navbar :nav-items="navItems"  ></navbar>
 
 </template>
 
@@ -15,7 +15,7 @@
   data() {
     return {
       navItems: [],
-      activeNavItem: 0,
+      
       darkNavBar: false,
     }
   },
