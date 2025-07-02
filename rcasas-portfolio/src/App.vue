@@ -1,21 +1,19 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  <div class="min-h-screen bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center">
+    <div class="bg-white rounded-xl shadow-2xl p-8 max-w-md">
+      <h1 class="text-3xl font-bold text-gray-800 mb-4">Tailwind Test</h1>
+      <p class="text-gray-600 mb-6">If this looks styled, Tailwind CSS v4 is working!</p>
+      <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-200">
+        Beautiful Button
+      </button>
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  </div>
 </template>
+
+<script setup>
+
+</script>
 
 <style scoped>
 header {
