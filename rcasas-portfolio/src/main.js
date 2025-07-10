@@ -1,6 +1,19 @@
-import './style.css'
+import './style.css';
 
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
+import VueLazyLoad from 'vue-lazyload-next'
+import router from './router';
+import { MotionPlugin } from '@vueuse/motion';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+app.use(MotionPlugin).use(router).use(VueLazyLoad, {
+//     loading: '/src/assets/placeholder.jpg', // Optional loading state
+//   error: '/src/assets/error-image.jpg',   // Optional error state
+    preLoad: 1.3,
+    attempt: 3,
+    throttleWait: 500
+});
+
+app.mount('#app')

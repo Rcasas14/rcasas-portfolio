@@ -34,6 +34,9 @@ export default {
         inter: ['Inter', 'sans-serif'],
         gellix: ['Gellix', 'sans-serif']
       },
+      colors: {
+        base: '#1F2937', //main bg-color
+      }
     },
   },
   plugins: [],
