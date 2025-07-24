@@ -6,8 +6,8 @@
         <div class="col-md-8 w-full flex flex-col justify-center items-center font-gellix">
           <div class="">
             <img src="" class="logo" alt="">
-            <div class="title-text">
-              <h1 class="text-white">Reymart Casas</h1>
+            <div class="title-text font-gellix">
+              <h1 class="text-white font-gellix">Reymart Casas</h1>
               <p class="sub-title">Digital Tech Developer</p>
               <p class="description">As a front-end developer from the Philippines, I'm driven by a passion for crafting web applications and finding innovative solutions to complex challenges.</p>
               <div class="">
