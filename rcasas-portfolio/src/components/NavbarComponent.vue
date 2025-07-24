@@ -1,20 +1,20 @@
 <template>
   <div class="navigation">
     <nav
-      class="fixed w-full z-50 md:px-10 2xl:px-40 px-5 py-2.5 bg-[#1F2937] xs:min-h-[80px] md:min-h-[115px] border-b-1 border-gray-50"
+      class="fixed w-full z-50 md:px-10 2xl:px-40 px-5 py-2.5 xs:min-h-[80px] md:min-h-[115px]"
     >
       <div class=" container mx-auto flex justify-between items-center relative lg:block ">
 
         <!-- Logo -->
         <div class="logo lg:hidden">
-              <a href="/"><h1 class="rcasas-logo font-gellix text-2xl font-bold xs:text-[20px] text-white">Reymart Casas.</h1></a>
+              <a href="/"><h1 class="elvina-logo text-white font-gellix text-2xl font-bold xs:text-[20px]">Reymart Casas.</h1></a>
         </div>
 
         <!-- DESKTOP LINKS -->
         <div class="hidden lg:flex items-center justify-between text-black h-[25px] my-6 mx-28">
           <!-- Logo -->
             <div class="logo min-w-[200px]">
-              <a href="/"><h1 class="rcasas-logo font-gellix text-2xl font-bold text-white">Reymart Casas.</h1></a>
+              <a href="/"><h1 class="elvina-logo text-white font-gellix text-2xl font-bold">Reymart Casas.</h1></a>
             </div>
             <div class="center-nav xl:ml-[5%] lg:ml-[0px] flex flex-row font-gellix">
               <!-- <a href=""><p class="font-gellix text-base pr-[52px]">About</p></a>
@@ -32,17 +32,17 @@
               <RouteLink
               to="/case-studies/under-construction"
               label="Projects"
-              :isActive="$route.path === '/case-studies'"
+              :isActive="$route.path === '/projects'"
               />
             </div>
 
             <div class="right-nav flex flex-row items-center text-white">
               <a :href="resumeLink" target="_blank" @click="linkValue"><p class="font-gellix font-medium pr-[52px] text-white">Download Resume</p></a>
               <a
-                href="#contact"
-                class=" inline-flex font-gellix items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 bg-gray-900 rounded-lg hover:bg-white hover:text-black border focus:shadow-outline focus:outline-none"
+                href="#github"
+                class=" inline-flex font-gellix items-center justify-center h-12 px-6 font-medium tracking-wide transition rounded-lg duration-200 bg-gray-900  hover:bg-white hover:text-black "
               >
-              Contact
+              Github
               </a>
             </div>
         </div>
@@ -69,7 +69,7 @@
                       <p class="tracking-widest font-bold text-xs text-[#000]">About</p>
                   </div>
               </router-link>
-              <router-link to="/case-studies/under-construction" class=" flex items-center py-5 hover:bg-[#D1D1D1] hover:bg-opacity-10" :class="{ 'bg-[#D9D9D9] bg-opacity-10 border-l-2 border-l-[#F5F5F6]': $route.path === '/case-studies' }" @click="mobileMenuOpen = false">
+              <router-link to="/projects" class=" flex items-center py-5 hover:bg-[#D1D1D1] hover:bg-opacity-10" :class="{ 'bg-[#D9D9D9] bg-opacity-10 border-l-2 border-l-[#F5F5F6]': $route.path === '/case-studies' }" @click="mobileMenuOpen = false">
                   <div class="flex flex-row justify-center items-center ml-4 gap-2">
                       <p class="tracking-widest font-bold text-xs text-[#000]">Projects</p>
                   </div>
