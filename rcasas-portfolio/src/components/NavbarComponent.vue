@@ -3,7 +3,7 @@
     <nav
       class="fixed w-full z-50 md:px-10 2xl:px-40 px-5 py-2.5  xs:min-h-[80px] md:min-h-[115px] bg-[#1F2937]/20 backdrop-blur-md border-b border-gray-700/30"
     >
-      <div class=" container mx-auto flex justify-between items-center relative lg:block ">
+      <div class=" container mx-auto flex justify-between items-center relative lg:block font-[Gellix]">
 
         <!-- Logo -->
         <div class="logo lg:hidden">
