@@ -7,8 +7,8 @@
           <img :src="backgroundGridIcon" class="background-grid w-full p-0" alt="">
           <div class="absolute flex gap-x-21 justify-around items-center mb-21">
             <img :src="rcasasLogo" class="logo mx-10 2xl:h-full 2xl:w-[310px]" alt="">
-            <div class="title-text w-[500px]">
-              <h1 class="text-white xs:text-[24px] md:text-[36px] xl:text-[42px] 2xl:text-[64px] font-extrabold py-0">Reymart Casas</h1>
+            <div class="title-text w-[500px] font-[Gellix]">
+              <h1 class="text-white xs:text-[24px] md:text-[36px] xl:text-[42px] 2xl:text-[64px] font-extrabold py-0 ">Reymart Casas</h1>
               <p class="sub-title text-gray-300 text-[20px] font-semibold pt-2">Digital Tech Developer</p>
               <p class="description text-gray-300 pt-2">As a front-end developer from the Philippines, I'm driven by a passion for crafting web applications and finding innovative solutions to complex challenges.</p>
                 <a href="/" class="flex flex-row items-center gap-x-2 pt-4">
@@ -23,6 +23,8 @@
     </div>
   </section>
 
+  <about-page></about-page>
+
 
 
 
@@ -31,11 +33,12 @@
 </template>
 
 <script>
-
+import AboutPage from './AboutPage.vue';
 //import ContactForm from '@/sections/ContactForm.vue';
 
 export default {
   components: {
+    AboutPage,
 
   },
   data() {
