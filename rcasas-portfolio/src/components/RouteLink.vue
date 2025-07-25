@@ -8,16 +8,7 @@
     @mouseenter="isHovered = true"
     @mouseleave="isHovered = false"
   >
-    <span
-      class="absolute inset-0 bg-light-gradient bg-no-repeat bg-[length:200%_100%] transition-all"
-      :class="{
-        'hidden': isActive,
-        'group-hover:animate-light-sweep': isHovered && !isActive,
-        'group-hover:animate-reverse-light-sweep': !isHovered && !isActive,
-        'opacity-0': !isHovered && !isActive
-      }"
-    ></span>
-    <p class="tracking-normal font-medium text-base text-white">{{ label }}</p>
+    <p class="tracking-normal font-medium text-[16px] text-white border-b-1 border-transparent hover:border-gray-300 transition-all duration-300 ease-in-out">{{ label }}</p>
   </router-link>
   </template>
 
